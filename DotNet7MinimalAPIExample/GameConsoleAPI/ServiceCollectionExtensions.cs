@@ -24,7 +24,7 @@ namespace GameConsoleAPI
                     publicRsa.ImportFromPem(publicKey);
                     var issuerSigningKey = new RsaSecurityKey(publicRsa);
 
-                    options.RequireHttpsMetadata = false; // Enable test in HTTP
+                    options.RequireHttpsMetadata = true;
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidAudience = audience, // Audience (who or what the token is intented for)
@@ -45,7 +45,7 @@ namespace GameConsoleAPI
                 .AddAuthentication()
                 .AddJwtBearer(options =>
                 {
-                    options.RequireHttpsMetadata = false; // Enable test in HTTP
+                    options.RequireHttpsMetadata = true;
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         IssuerSigningKey = new SymmetricSecurityKey(
