@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameConsoleAPI", "WebApplication1\GameConsoleAPI.csproj", "{8D561B21-1C9E-4D56-8832-1801899B7CE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameConsoleAPI", "GameConsoleAPI\GameConsoleAPI.csproj", "{8D561B21-1C9E-4D56-8832-1801899B7CE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
